@@ -12,7 +12,7 @@ function Register() {
         try {
             const resp = await axios.post('https://jwt-backend-kqho.onrender.com/api/auth/register', user);
             //console.log(resp);
-            if (resp.status == 201) {
+            if (resp.status === 201) {
                 // alert(resp.data.message);
                 toast.success(resp.data.message);
                 setUser({ name: '', email: '', username: '', password: '' });

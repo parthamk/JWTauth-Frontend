@@ -29,7 +29,9 @@ function Profile() {
         }
     }
     useEffect(()=>{
+        // eslint-disable-next-line
         fetchData();
+        // eslint-disable-next-line
     },[])
 
     return ( 
